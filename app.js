@@ -8,7 +8,7 @@ const task = require("./routes/route");
 const path = __dirname + "/public";
 
 // console.log(path);
-const url = process.env.MONGO_URI;
+const url = process.env.MONGODB_URI;
 
 //middleware
 app.use(express.json());
