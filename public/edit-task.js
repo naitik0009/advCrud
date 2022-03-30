@@ -10,7 +10,7 @@ let tempName;
 console.log(id);
 const showTask = async () => {
   try {
-    const task = await axios.get(`http://localhost:5600/api/v1/tasks/${id}`);
+    const task = await axios.get(`/api/v1/tasks/${id}`);
     console.log(task.data.result);
     const { _id: taskID, completed, name } = task.data.result;
 
